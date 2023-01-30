@@ -1,0 +1,186 @@
+/* HERO */
+.hero-container {
+  background-image: url("../images/plates.avif");
+  min-height: 60%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.hero-container > .hero-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  padding: 12px 24px;
+  background-color: black;
+  opacity: .8;
+  font-size: 1.25rem;
+  letter-spacing: 10px;
+}
+
+/* ABOUT */
+.about-wrapper {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align:center;
+  padding: 60px 0;
+}
+
+.about-wrapper > p:nth-of-type(1) {
+  font-style: italic;
+}
+
+.about-wrapper > p:nth-of-type(2) {
+  text-align: justify;
+}
+
+.about-wrapper > .about-me-content{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px;
+}
+
+.about-wrapper > .about-me-content > .about-content-photo-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.about-wrapper > .about-me-content > .about-content-photo-wrapper > .profile-icon-wrapper i {
+  padding-right: 15px;
+}
+
+.about-wrapper > .about-me-content > .about-content-photo-wrapper img{
+  width: 100%;
+  height: 65%; 
+  padding-top: 25px;
+  filter: opacity(.65);
+}
+
+.about-wrapper > .about-me-content > p {
+  margin: 0;
+  text-align: justify;
+  align-self: center;
+}
+
+/* Accolades */
+.accolades-wrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+  background-color: #616161;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  text-align: center;
+}
+
+.accolades-wrapper span {
+  font-size: 24px;
+}
+
+
+/* Portfolio parallax BG */
+.portfolio-bg-wrapper{
+  background-image: url("https://images.unsplash.com/photo-1526407153035-415201c1ba3d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGdhbWJhcnUlMjBjcm9zc2ZpdHxlbnwwfHwwfHw%3D&w=1000&q=80");
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  min-height: 480px;
+  filter: grayscale(95%);
+  font-size: 30px;
+}
+
+
+.portfolio-bg-wrapper > .portfolio-bg-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform:translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  font-size: 2em;
+  letter-spacing: 10px;
+}
+
+/* Portfolio Grid */
+.portfolio-items-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  cursor: pointer;
+}
+
+.portfolio-items-grid > .portfolio-image-wrapper, .portfolio-items-grid img {
+  transition: .1s ease-in-out all;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.portfolio-items-grid > .portfolio-image-wrapper:hover {
+  filter: opacity(.5);
+}
+
+/* Contact Parallax */
+.contact-bg{
+  background-image: url("../images/barbell\ with\ wieght.avif");
+}
+
+/* Contact Container */
+.contact-info-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-info-container > div {
+  padding: 15px;
+}
+
+.contact-info-container > .contact-info-right {
+  align-self: flex-start;
+  text-align: left;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form {
+  margin-top: 50px;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form > .form-group {
+  display: flex;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form input {
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid lightgrey;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form input[type='text']:last-child {
+  width: 100%;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form button{
+  color: rgb(207, 54, 40);
+  background-color: rgb(45, 41, 38);
+  user-select: none;
+  padding: 15px;
+  vertical-align: middle;
+  white-space: nowrap;
+  margin-top: 15px;
+  float: right;
+  cursor: pointer;
+  text-transform: uppercase;
+  transition: .09s ease-in-out;
+}
+
+.contact-info-container > .contact-info-right > .contact-info-form button:hover{
+  color: rgb(45, 41, 38);
+  background-color: rgb(207, 54, 40);
+
+}
+

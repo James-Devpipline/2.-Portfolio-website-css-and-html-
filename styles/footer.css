@@ -1,0 +1,12 @@
+.footer {
+  text-align: center;
+  padding: 64px 0px;
+  color: rgb(228, 64, 64);
+  background-color: rgb(34, 31, 28);
+  opacity: .6;
+}
+
+.footer:hover {
+  opacity: 1;
+  transition: .1s ease-in-out;
+}
